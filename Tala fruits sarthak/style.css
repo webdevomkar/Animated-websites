@@ -1,0 +1,382 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #D5CDC4;
+    user-select: none;
+}
+
+@font-face {
+  font-family: one;
+  src: url(./1.ttf);
+}
+@font-face {
+  font-family: two;
+  src: url(./2.ttf);
+}
+@font-face {
+  font-family: three;
+  src: url(./3.ttf);
+}
+@font-face {
+  font-family: four;
+  src: url(./4.ttf);
+}
+@font-face {
+  font-family: five;
+  src: url(./5.ttf);
+}
+html , body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+  position: relative;
+  background-color: #232025;
+  overflow-x: hidden;
+}
+#nav{
+  font-family: one;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4vw 5.8vw;
+  position: relative;
+  z-index: 99;
+  
+}
+#nav>h4{
+  letter-spacing: .5vw;
+  cursor: pointer;
+}
+#leftnav{
+  display: flex;
+  gap: 5.5vw;
+}
+#leftnav i{
+ font-size: 1vw;
+ cursor: pointer; 
+  font-size: 1vw;
+}
+#fullscreennav{
+  height: 90vh;
+  width: 100%;
+  background-color: #D5CDC4;
+  position: absolute;
+  padding: 10vw 5vw;
+  top: -100%;
+  transition: all ease-in-out 1s;
+  z-index: 9;
+}
+#fullscreennav h1{
+  font-size: 5vw;
+  color: #232025;
+  font-family: one;
+  font-size: 12vw;
+  margin-bottom: 3.5vw;
+}
+#leftmenu{
+  height: 15vw;
+  width: 15vw;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5vw;
+}
+#leftmenu a{
+  color: #232025;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 2vw;
+  font-family: two;
+}
+#rightmenu{
+  height: 15vw;
+  width: 15vw;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5vw;
+}
+#rightmenu a{
+  color: #232025;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 2vw;
+  font-family: two;
+}
+#bottommenu{
+  display: flex;
+  gap: 18vw;
+}
+#rightmenu a:hover{
+  border-bottom: 1px solid #232025;
+  width: 45%;
+}
+#leftmenu a:hover{
+  border-bottom: 1px solid #232025;
+  width: 45%;
+}
+#page1{
+  height: fit-content;
+  width: 100vw;
+  position: relative;
+}
+#page1 h1{
+  font-size: 13vw;
+  font-family: one;
+  margin-left: 5vw;
+  letter-spacing: 1.2vw;
+}
+#page1 h2{
+  margin-left: 26vw;
+  font-family: two;
+  font-size: 3vw;
+  width: 23vw;
+  font-weight: 100;
+  margin-top: 2vw;
+  line-height: 2.8vw;
+}
+#page1 a{
+  position: absolute;
+  top: 65%;
+  right: 20%;
+  font-family: two;
+  font-size: .7vw;
+  text-transform: uppercase; 
+}
+
+#page2{
+  margin-top: 4vw;
+  width: 100vw;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#page2 #imgdiv{
+  height: 112vh;
+  width: 90vw;
+}
+#page2 #imgdiv img{
+  object-fit: cover;
+  object-position: center;
+  height: 112vh;
+  width: 90vw;
+  scale: 1;
+}
+
+#page3{
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+}
+
+#page3 h1{
+  font-size: 5vw;
+  font-family: two;
+  font-weight: 100;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  position: absolute;
+  width: 90%;
+  text-align: center;
+  line-height: 1.1;
+}
+#page3 h1 span{
+  font-family: three;
+}
+#page4{
+  height: 70vh;
+  width: 100vw;
+  position: relative;
+  padding: 0 6vw;
+  
+}
+#page4 h1{
+  font-size: 8vw;
+  font-family: one;
+  line-height: 1;
+}
+#page5{
+  position: relative;
+  height: 30vh;
+  width: 100vw;
+  display: flex;
+}
+#page5 #leftside{
+  height: 100%;
+  width: 65%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px dotted #D5CDC4;
+  border-bottom: 1px dotted #D5CDC4;
+  border-right: 1px dotted #D5CDC4;
+}
+#page5 #rightside{
+  height: 100%;
+  width: 35%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px dotted #D5CDC4;
+  border-bottom: 1px dotted #D5CDC4;
+}
+#page5 #leftside h1{
+  font-size: 3.5vw;
+  font-family: one;
+}
+#page5 #rightside h3{
+  font-family: one;
+  text-align: left;
+  font-size: 1.5vw;
+}
+#page6{
+  height: 100vh;
+  width: 100vw;
+  background-image: url(./stars.gif);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+#page6 #centertxt{
+  height: 70vh;
+  width: 60vw;
+  position: absolute;
+  top: 7vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#page6 #centertxt h1{
+  font-family: two;
+  font-size: 4vw;
+  letter-spacing: .1vw;
+  line-height: 1;
+}
+#page6 #centertxt h1 span{
+  font-family: three;
+  text-align: right;
+  margin-left: 10vw;
+}
+#page6 #centertxt h4{
+  font-family: one;
+  font-size: 1vw;
+  letter-spacing: 0vw;
+  line-height: 1;
+  margin-top: 4vw;
+  margin-bottom: 7vw;
+  margin-right: 1vw;
+}
+#page7{
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#page7   h1{
+  font-size: 3.6vw;
+  font-family: two;
+  font-weight: 100;
+  letter-spacing: -.1;
+  line-height: 1;
+}
+#page7   h1 span{
+  font-family: three;
+}
+#page8{
+  height: 110vh;
+  width: 100vw;
+  position: relative;
+}
+#page8 h1{
+  font-size: 11vw;
+  font-family: one;
+  line-height: 20.5vh
+}
+#page8 h1 .one2{
+  color: transparent;
+  -webkit-text-stroke: 1px #D5CDC4;
+}
+#page8 .slidesmoving1{
+  overflow-x: auto;
+  overflow-y: hidden;
+  cursor: default;
+}
+#page8 .slidesmoving2{
+  overflow-x: auto;
+  overflow-y: hidden;
+  cursor: default;
+}
+#page8 .slidesmoving2 h1{
+  transform: translateX(-100%)
+}
+#page8 .slidesmoving2::-webkit-scrollbar{
+  display: none;
+}
+#page8 .slidesmoving1::-webkit-scrollbar{
+  display: none;
+}
+#page9{
+  height: 100vh;
+  width: 100vw;
+  padding: 18vh 0; 
+  position: relative;
+}
+#page9 h1{
+  font-family: one;
+  font-weight: 100;
+  font-size: 3vw;
+  text-align: center;
+}
+#page9 h1 span{
+  font-family: three;
+}
+#page9 #yesnodiv{
+  height: 50vh;
+  width: 100vw;
+  margin-top: 10vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#page9 #yesnodiv #yesdiv{
+  height: 100%;
+  width: 24%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#page9 #yesnodiv #nodiv{
+  height: 100%;
+  width: 24%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#page9 #yesnodiv #yesdiv h1{
+  font-weight: 100;
+  font-size: 2.3vw;
+  z-index: 99;
+  cursor: pointer;
+}
+#page9 #yesnodiv #yesdiv h1:hover{
+  transition: all ease-in-out .4s;
+  border-bottom: 3px dotted greenyellow;
+}
+#page9 #yesnodiv #nodiv h1:hover{
+  transition: all ease-in-out .4s;
+  border-bottom: 3px dotted greenyellow;
+}
+#page9 #yesnodiv #nodiv h1{
+  font-weight: 100;
+  font-size: 2.3vw;
+  z-index: 99;
+  cursor: pointer;
+}

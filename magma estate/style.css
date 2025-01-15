@@ -1,0 +1,134 @@
+@font-face {
+  font-family: roboto;
+  src: url(./KFOlCnqEu92Fr1MmEU9fBBc4\ \(1\).ttf);
+}
+@font-face {
+  font-family: roboto less;
+  src: url(./KFOmCnqEu92Fr1Mu4mxK\ \(1\).ttf);
+}
+@font-face {
+  font-family: jost;
+  src: url(./jost-variable.ttf);
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,body{
+  height: 100%;
+  width: 100%;
+}
+#main{
+  position: relative;
+  overflow: hidden;
+}
+#page1{
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+}
+#page1 video{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+#page1 #nav{
+  position: absolute;
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 30px;
+}
+#page1 #nav img{
+  width: 12%;
+  margin-top: -2vw;
+}
+#page1 #nav #rightnav button{
+  padding: 10px 20px;
+  background-color: #0A43E4 ;
+  border-radius: 25px;
+  border: .1px solid #ece7e7ac; 
+  color: white;
+  margin-right: 25px;
+  font-family: roboto less ;
+  font-size: 14px;
+  margin-top: 20px;
+  font-weight: 100;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.navbtn:hover{
+  cursor: pointer;
+  background-color: white;
+  color: #0A43E4;
+}
+#centertxt{
+  height: 50vh;
+  width: 50vw;
+  position: absolute;
+  left: 7%;
+  bottom: 10%;
+}
+#ogtxt h1{
+ color: white;
+ font-size: 90px;
+ font-family: roboto less;
+ font-weight: 100;
+ letter-spacing: 2px;
+ margin-bottom: 45px;
+ line-height: 105px;
+}
+#para{
+  display: flex;
+  gap: 32px;
+}
+#para p{
+  color: white;
+  font-family: roboto less;
+  font-weight: lighter;
+  letter-spacing: 0px;
+  font-size: 20px;
+  line-height: 30px;
+  
+}
+#para button{
+  height: 48px;
+  padding: 0px 50px;
+  border-radius: 50px;
+  background-color: white;
+  color: #2f5ddd;
+  border: none;
+  font-size: 13px;
+  font-family: roboto;
+  font-weight: lighter;
+  text-transform: uppercase;
+  margin-top: 36px;
+  cursor: pointer;
+}
+#page2{
+  height: 100vh;
+  width: 100vw;
+  background-color: #0A3CCE;
+  position: relative;
+  padding: 70px 150px;
+}
+#page2 h2{
+  font-size: 18px;
+  color: rgb(216, 215, 215);
+  font-family: roboto less;
+  font-weight: 100;
+  letter-spacing: 1px;
+  line-height: 20px;
+}
+#page2 h1{
+  font-size: 56px;
+  color: #dadada69;
+  font-family: roboto less;
+  font-weight: 50;
+  padding-top: 50px;
+  letter-spacing: -1px;
+  line-height: 1.4;
+}

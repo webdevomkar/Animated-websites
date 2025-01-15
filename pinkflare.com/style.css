@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html , body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+  width: 100%;
+}
+#home{
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+#home img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+#home #circle{
+ position: absolute;
+ height: 30vw;
+ width: 30vw;
+ background-color: white;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%,-50%);
+ border-radius: 50%;
+}
+#top{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-color: rebeccapurple;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+#btm{
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-color: blue;
+}

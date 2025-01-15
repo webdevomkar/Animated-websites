@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: roboto;
+    user-select: none;
+}
+html , body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  display: flex;
+}
+#left{
+  width: 35%;
+  height: 100%;
+  background-color: rgb(200,70,70);
+  color: white;
+  position: relative;
+}
+#right{
+  width: 65%;
+  height: 100%;
+  background-color: white;
+  position: relative;
+}
+#right>img{
+  position: absolute;
+  top: 40%;
+  left: -20%;
+  transform: translate(-50%,-50%);
+  transform: rotate(-30deg);
+}
+#left #text{
+  width: 90%;
+  position: absolute;
+  top: 9vw;
+  left: 4vw;
+}
+#left #text h1{
+  font-size: 3vw;
+  font-family: roboto;
+  font-weight: 900;
+}
+#left #text h1 span{
+  font-weight: 100;
+}
+#left #text h2{
+  font-family: roboto;
+  margin-top:1vw;
+  margin-bottom:1vw;
+  line-height: 4vw;
+  font-size: 2.4vw;
+}
+#left #text p{
+  font-family: roboto;
+  line-height: vw;
+  letter-spacing: 1;
+  width: 70%;
+}
+#left #text button{
+  padding: 1vw 1.8vw;
+  color: rgb(200,70,70);
+  font-weight: 900;
+  font-family: roboto;
+  margin-top:1vw;
+  border: none;
+  border-radius: .6vw;
+  cursor: pointer;
+}
+#btmtext{
+  height: 12vh;
+  width: 25vw;
+  background-color: white;
+  position: absolute;
+  bottom: 2.2vw;
+  left: 4vw;
+}
+#btmtext h3{
+  color: rgb(200,70,70);
+  text-align: center;
+  margin-top: .5vw;
+  font-weight: 200;
+}
+#btmtext p{
+  color: black;
+  text-align: center;
+  font-size: .8vw;
+  padding: 1vw 1vw;
+}
+#btmtext h3 span{
+  font-weight: 800;
+}
+#right #centertxt{
+  width: 70%;
+  height: 30%;
+  position: absolute;
+  top: 16%;
+  left: 24%;
+}
+#centertxt h1 span{
+font-weight: 200;
+color: black;
+}
+#centertxt h1{
+  font-weight: 900;
+  color: rgb(200,70,70);
+  font-size: 5vw;
+}
+#centertxt h2{
+  font-size: 2vw;
+  margin-top: .8vw;
+  margin-bottom: .8vw;
+}
+#centertxt h2 span{
+  font-size: 2vw;
+  font-weight: 900;
+  color: rgb(200,70,70);
+  cursor: pointer;
+}
+#centertxt p{
+  margin-bottom: 1.5vw;
+  width: 65%;
+}
+#centertxt button{
+  padding: .5vw .5vw;
+  border: 2px solid #dadada;
+  color: rgb(200,70,70);
+  background-color: white;
+  font-weight: 900;
+  border-radius: .5vw;
+  margin-right: 1vw;
+  cursor: pointer;
+}
+#centertxt #xyz{
+  font-size: 1vw;
+  margin-top: 1.5vw;  
+  margin-right: 5vw;
+}
+#sampleimg{
+  width: 60%;
+  height: 20%;
+  display: flex;
+  gap: 1vw;
+}
+.sample{
+  height: 5vw;
+  width: 5vw;
+  background-color: red;
+  border-radius: 1vw;
+  overflow: hidden;
+  border: 1px solid rgb(146, 143, 143) ;
+  cursor: pointer;
+}
+.sample img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
